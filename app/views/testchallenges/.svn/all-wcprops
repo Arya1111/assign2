@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/don/!svn/ver/1101/source/assign/app/views/testchallenges
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/don/!svn/ver/1101/source/assign/app/views/testchallenges/show.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/don/!svn/ver/1101/source/assign/app/views/testchallenges/_form.html.erb
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/don/!svn/ver/1101/source/assign/app/views/testchallenges/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/don/!svn/ver/1101/source/assign/app/views/testchallenges/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/don/!svn/ver/1101/source/assign/app/views/testchallenges/new.html.erb
+END

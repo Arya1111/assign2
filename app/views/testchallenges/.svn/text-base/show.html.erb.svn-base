@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Fbid:</b>
+  <%= @testchallenge.fbid %>
+</p>
+
+<p>
+  <b>Uuid:</b>
+  <%= @testchallenge.uuid %>
+</p>
+
+<p>
+  <b>Score:</b>
+  <%= @testchallenge.score %>
+</p>
+
+<p>
+  <b>Initiator:</b>
+  <%= @testchallenge.initiator %>
+</p>
+
+
+<%= link_to 'Edit', edit_testchallenge_path(@testchallenge) %> |
+<%= link_to 'Back', testchallenges_path %>

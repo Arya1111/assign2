@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  fbid: MyString
+  uuid: MyString
+  score: 1
+  initiator: MyString
+
+two:
+  fbid: MyString
+  uuid: MyString
+  score: 1
+  initiator: MyString

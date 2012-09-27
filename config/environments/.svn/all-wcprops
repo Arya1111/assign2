@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/don/!svn/ver/1101/source/assign/config/environments
+END
+production.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/don/!svn/ver/1101/source/assign/config/environments/production.rb
+END
+test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/don/!svn/ver/1101/source/assign/config/environments/test.rb
+END
+development.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/don/!svn/ver/1101/source/assign/config/environments/development.rb
+END

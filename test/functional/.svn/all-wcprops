@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/don/!svn/ver/1101/source/assign/test/functional
+END
+.gitkeep
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/don/!svn/ver/1101/source/assign/test/functional/.gitkeep
+END
+testchallenges_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/don/!svn/ver/1101/source/assign/test/functional/testchallenges_controller_test.rb
+END
+uniqueids_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/don/!svn/ver/1101/source/assign/test/functional/uniqueids_controller_test.rb
+END
+home_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/don/!svn/ver/1101/source/assign/test/functional/home_controller_test.rb
+END

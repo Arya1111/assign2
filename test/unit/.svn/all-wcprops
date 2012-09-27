@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/don/!svn/ver/1101/source/assign/test/unit
+END
+testchallenge_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/don/!svn/ver/1101/source/assign/test/unit/testchallenge_test.rb
+END
+uniqueid_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/don/!svn/ver/1101/source/assign/test/unit/uniqueid_test.rb
+END
+.gitkeep
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/don/!svn/ver/1101/source/assign/test/unit/.gitkeep
+END

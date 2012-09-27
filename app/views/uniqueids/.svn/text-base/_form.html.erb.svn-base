@@ -1,0 +1,21 @@
+<%= form_for(@uniqueid) do |f| %>
+  <% if @uniqueid.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@uniqueid.errors.count, "error") %> prohibited this uniqueid from being saved:</h2>
+
+      <ul>
+      <% @uniqueid.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :uuid %><br />
+    <%= f.number_field :uuid %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

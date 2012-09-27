@@ -1,0 +1,5 @@
+class Testchallenge < ActiveRecord::Base
+  attr_accessible :fbid, :initiator, :score, :uuid
+
+  has_one :testchallenges
+end

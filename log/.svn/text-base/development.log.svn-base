@@ -1,0 +1,1742 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (12.4ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (41.5ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUniqueids (20120924045339)
+  [1m[35m (25.5ms)[0m  CREATE TABLE `uniqueids` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `uuid` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120924045339')[0m
+Migrating to CreateTestchallenges (20120924045529)
+  [1m[35m (5.8ms)[0m  CREATE TABLE `testchallenges` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `fbid` varchar(255), `uuid` varchar(255), `score` int(11), `initiator` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120924045529')[0m
+  [1m[35m (0.3ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/" for 127.0.0.1 at Mon Sep 24 10:42:16 +0530 2012
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Compiled home.css  (11ms)  (pid 8722)
+Compiled scaffolds.css  (14ms)  (pid 8722)
+Compiled testchallenges.css  (0ms)  (pid 8722)
+Compiled uniqueids.css  (0ms)  (pid 8722)
+Compiled application.css  (64ms)  (pid 8722)
+Compiled jquery.js  (3ms)  (pid 8722)
+Compiled jquery_ujs.js  (0ms)  (pid 8722)
+Compiled home.js  (322ms)  (pid 8722)
+Compiled testchallenges.js  (95ms)  (pid 8722)
+Compiled uniqueids.js  (86ms)  (pid 8722)
+Compiled application.js  (593ms)  (pid 8722)
+Completed 200 OK in 760ms (Views: 759.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Sep 24 10:42:17 +0530 2012
+Served asset /application.css - 200 OK (6ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Mon Sep 24 10:42:17 +0530 2012
+Served asset /home.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Sep 24 10:42:17 +0530 2012
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/testchallenges.css?body=1" for 127.0.0.1 at Mon Sep 24 10:42:17 +0530 2012
+Served asset /testchallenges.css - 200 OK (1ms)
+
+
+Started GET "/assets/uniqueids.css?body=1" for 127.0.0.1 at Mon Sep 24 10:42:17 +0530 2012
+Served asset /uniqueids.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Sep 24 10:42:17 +0530 2012
+Served asset /jquery.js - 200 OK (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Sep 24 10:42:17 +0530 2012
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Sep 24 10:42:17 +0530 2012
+Served asset /home.js - 200 OK (2ms)
+
+
+Started GET "/assets/testchallenges.js?body=1" for 127.0.0.1 at Mon Sep 24 10:42:17 +0530 2012
+Served asset /testchallenges.js - 200 OK (2ms)
+
+
+Started GET "/assets/uniqueids.js?body=1" for 127.0.0.1 at Mon Sep 24 10:42:17 +0530 2012
+Served asset /uniqueids.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Sep 24 10:42:17 +0530 2012
+Served asset /application.js - 200 OK (6ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Sep 24 10:42:52 +0530 2012
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Sep 24 10:42:52 +0530 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Mon Sep 24 10:42:52 +0530 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Sep 24 10:42:52 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testchallenges.css?body=1" for 127.0.0.1 at Mon Sep 24 10:42:52 +0530 2012
+Served asset /testchallenges.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uniqueids.css?body=1" for 127.0.0.1 at Mon Sep 24 10:42:52 +0530 2012
+Served asset /uniqueids.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Sep 24 10:42:52 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Sep 24 10:42:52 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Sep 24 10:42:52 +0530 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testchallenges.js?body=1" for 127.0.0.1 at Mon Sep 24 10:42:52 +0530 2012
+Served asset /testchallenges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uniqueids.js?body=1" for 127.0.0.1 at Mon Sep 24 10:42:52 +0530 2012
+Served asset /uniqueids.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Sep 24 10:42:52 +0530 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/testchallenges" for 127.0.0.1 at Mon Sep 24 10:42:54 +0530 2012
+Processing by TestchallengesController#index as HTML
+  [1m[36mTestchallenge Load (0.2ms)[0m  [1mSELECT `testchallenges`.* FROM `testchallenges` [0m
+  Rendered testchallenges/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 39ms (Views: 5.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Sep 24 10:42:54 +0530 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Mon Sep 24 10:42:54 +0530 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uniqueids.css?body=1" for 127.0.0.1 at Mon Sep 24 10:42:54 +0530 2012
+Served asset /uniqueids.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Sep 24 10:42:54 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Sep 24 10:42:54 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testchallenges.css?body=1" for 127.0.0.1 at Mon Sep 24 10:42:54 +0530 2012
+Served asset /testchallenges.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Sep 24 10:42:54 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Sep 24 10:42:54 +0530 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testchallenges.js?body=1" for 127.0.0.1 at Mon Sep 24 10:42:54 +0530 2012
+Served asset /testchallenges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uniqueids.js?body=1" for 127.0.0.1 at Mon Sep 24 10:42:54 +0530 2012
+Served asset /uniqueids.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Sep 24 10:42:54 +0530 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/testchallenges/new" for 127.0.0.1 at Mon Sep 24 10:46:02 +0530 2012
+Processing by TestchallengesController#new as HTML
+  Rendered testchallenges/_form.html.erb (33.4ms)
+  Rendered testchallenges/new.html.erb within layouts/application (48.3ms)
+Completed 200 OK in 58ms (Views: 52.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Sep 24 10:46:02 +0530 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Mon Sep 24 10:46:02 +0530 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Sep 24 10:46:02 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testchallenges.css?body=1" for 127.0.0.1 at Mon Sep 24 10:46:02 +0530 2012
+Served asset /testchallenges.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uniqueids.css?body=1" for 127.0.0.1 at Mon Sep 24 10:46:02 +0530 2012
+Served asset /uniqueids.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Sep 24 10:46:02 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Sep 24 10:46:02 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Sep 24 10:46:02 +0530 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testchallenges.js?body=1" for 127.0.0.1 at Mon Sep 24 10:46:02 +0530 2012
+Served asset /testchallenges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uniqueids.js?body=1" for 127.0.0.1 at Mon Sep 24 10:46:02 +0530 2012
+Served asset /uniqueids.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Sep 24 10:46:02 +0530 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/testchallenges" for 127.0.0.1 at Mon Sep 24 10:46:46 +0530 2012
+Processing by TestchallengesController#index as */*
+  [1m[35mTestchallenge Load (0.1ms)[0m  SELECT `testchallenges`.* FROM `testchallenges` 
+  Rendered testchallenges/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/testchallenges.json" for 127.0.0.1 at Mon Sep 24 10:47:18 +0530 2012
+Processing by TestchallengesController#index as JSON
+  [1m[36mTestchallenge Load (0.2ms)[0m  [1mSELECT `testchallenges`.* FROM `testchallenges` [0m
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/uniqueids/" for 127.0.0.1 at Mon Sep 24 10:51:37 +0530 2012
+Processing by UniqueidsController#index as HTML
+  [1m[35mUniqueid Load (0.2ms)[0m  SELECT `uniqueids`.* FROM `uniqueids` 
+  Rendered uniqueids/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 13ms (Views: 9.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Sep 24 10:51:37 +0530 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Mon Sep 24 10:51:37 +0530 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Sep 24 10:51:37 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testchallenges.css?body=1" for 127.0.0.1 at Mon Sep 24 10:51:37 +0530 2012
+Served asset /testchallenges.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uniqueids.css?body=1" for 127.0.0.1 at Mon Sep 24 10:51:37 +0530 2012
+Served asset /uniqueids.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Sep 24 10:51:37 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Sep 24 10:51:37 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Sep 24 10:51:38 +0530 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testchallenges.js?body=1" for 127.0.0.1 at Mon Sep 24 10:51:38 +0530 2012
+Served asset /testchallenges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uniqueids.js?body=1" for 127.0.0.1 at Mon Sep 24 10:51:38 +0530 2012
+Served asset /uniqueids.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Sep 24 10:51:38 +0530 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/uniqueids/new" for 127.0.0.1 at Mon Sep 24 10:51:40 +0530 2012
+Processing by UniqueidsController#new as HTML
+  Rendered uniqueids/_form.html.erb (2.0ms)
+  Rendered uniqueids/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Sep 24 10:51:40 +0530 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Mon Sep 24 10:51:40 +0530 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Sep 24 10:51:40 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uniqueids.css?body=1" for 127.0.0.1 at Mon Sep 24 10:51:40 +0530 2012
+Served asset /uniqueids.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testchallenges.css?body=1" for 127.0.0.1 at Mon Sep 24 10:51:40 +0530 2012
+Served asset /testchallenges.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Sep 24 10:51:40 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Sep 24 10:51:40 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Sep 24 10:51:40 +0530 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testchallenges.js?body=1" for 127.0.0.1 at Mon Sep 24 10:51:40 +0530 2012
+Served asset /testchallenges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uniqueids.js?body=1" for 127.0.0.1 at Mon Sep 24 10:51:40 +0530 2012
+Served asset /uniqueids.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Sep 24 10:51:40 +0530 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/testchallenges/" for 127.0.0.1 at Mon Sep 24 11:19:35 +0530 2012
+Processing by TestchallengesController#index as HTML
+  [1m[36mTestchallenge Load (0.2ms)[0m  [1mSELECT `testchallenges`.* FROM `testchallenges` [0m
+  Rendered testchallenges/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Sep 24 11:19:35 +0530 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Mon Sep 24 11:19:35 +0530 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Sep 24 11:19:35 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testchallenges.css?body=1" for 127.0.0.1 at Mon Sep 24 11:19:35 +0530 2012
+Served asset /testchallenges.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uniqueids.css?body=1" for 127.0.0.1 at Mon Sep 24 11:19:35 +0530 2012
+Served asset /uniqueids.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Sep 24 11:19:35 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Sep 24 11:19:35 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Sep 24 11:19:35 +0530 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testchallenges.js?body=1" for 127.0.0.1 at Mon Sep 24 11:19:35 +0530 2012
+Served asset /testchallenges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uniqueids.js?body=1" for 127.0.0.1 at Mon Sep 24 11:19:35 +0530 2012
+Served asset /uniqueids.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Sep 24 11:19:35 +0530 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/testchallenges.json" for 127.0.0.1 at Mon Sep 24 11:22:25 +0530 2012
+Error occurred while parsing request parameters.
+Contents:
+
+
+
+MultiJson::DecodeError (399: unexpected token at '=arunganga, "uuid"=121, "score"=1000, "initiator"=arunganga]'):
+  json (1.7.5) lib/json/common.rb:155:in `parse'
+  json (1.7.5) lib/json/common.rb:155:in `parse'
+  multi_json (1.3.6) lib/multi_json/adapters/json_common.rb:7:in `load'
+  multi_json (1.3.6) lib/multi_json.rb:93:in `load'
+  activesupport (3.2.8) lib/active_support/json/decoding.rb:15:in `decode'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:47:in `parse_formatted_parameters'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:17:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__434967737__call__4__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.5ms)
+
+
+Started POST "/testchallenges.json" for 127.0.0.1 at Mon Sep 24 11:22:43 +0530 2012
+Error occurred while parsing request parameters.
+Contents:
+
+
+
+MultiJson::DecodeError (399: unexpected token at '="arunganga", "uuid"=121, "score"=1000, "initiator"="arunganga"]'):
+  json (1.7.5) lib/json/common.rb:155:in `parse'
+  json (1.7.5) lib/json/common.rb:155:in `parse'
+  multi_json (1.3.6) lib/multi_json/adapters/json_common.rb:7:in `load'
+  multi_json (1.3.6) lib/multi_json.rb:93:in `load'
+  activesupport (3.2.8) lib/active_support/json/decoding.rb:15:in `decode'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:47:in `parse_formatted_parameters'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:17:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__434967737__call__4__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.5ms)
+
+
+Started POST "/testchallenges.json" for 127.0.0.1 at Mon Sep 24 11:22:55 +0530 2012
+Error occurred while parsing request parameters.
+Contents:
+
+
+
+MultiJson::DecodeError (399: unexpected token at '="arunganga", "uuid"="121", "score"=1000, "initiator"="arunganga"]'):
+  json (1.7.5) lib/json/common.rb:155:in `parse'
+  json (1.7.5) lib/json/common.rb:155:in `parse'
+  multi_json (1.3.6) lib/multi_json/adapters/json_common.rb:7:in `load'
+  multi_json (1.3.6) lib/multi_json.rb:93:in `load'
+  activesupport (3.2.8) lib/active_support/json/decoding.rb:15:in `decode'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:47:in `parse_formatted_parameters'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:17:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__434967737__call__4__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.2ms)
+
+
+Started POST "/testchallenges.json" for 127.0.0.1 at Mon Sep 24 11:22:56 +0530 2012
+Error occurred while parsing request parameters.
+Contents:
+
+
+
+MultiJson::DecodeError (399: unexpected token at '="arunganga", "uuid"="121", "score"=1000, "initiator"="arunganga"]'):
+  json (1.7.5) lib/json/common.rb:155:in `parse'
+  json (1.7.5) lib/json/common.rb:155:in `parse'
+  multi_json (1.3.6) lib/multi_json/adapters/json_common.rb:7:in `load'
+  multi_json (1.3.6) lib/multi_json.rb:93:in `load'
+  activesupport (3.2.8) lib/active_support/json/decoding.rb:15:in `decode'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:47:in `parse_formatted_parameters'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:17:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__434967737__call__4__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.1ms)
+
+
+Started POST "/testchallenges.json" for 127.0.0.1 at Mon Sep 24 11:22:56 +0530 2012
+Error occurred while parsing request parameters.
+Contents:
+
+
+
+MultiJson::DecodeError (399: unexpected token at '="arunganga", "uuid"="121", "score"=1000, "initiator"="arunganga"]'):
+  json (1.7.5) lib/json/common.rb:155:in `parse'
+  json (1.7.5) lib/json/common.rb:155:in `parse'
+  multi_json (1.3.6) lib/multi_json/adapters/json_common.rb:7:in `load'
+  multi_json (1.3.6) lib/multi_json.rb:93:in `load'
+  activesupport (3.2.8) lib/active_support/json/decoding.rb:15:in `decode'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:47:in `parse_formatted_parameters'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:17:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__434967737__call__4__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.7ms)
+
+
+Started POST "/testchallenges.json" for 127.0.0.1 at Mon Sep 24 11:22:56 +0530 2012
+Error occurred while parsing request parameters.
+Contents:
+
+
+
+MultiJson::DecodeError (399: unexpected token at '="arunganga", "uuid"="121", "score"=1000, "initiator"="arunganga"]'):
+  json (1.7.5) lib/json/common.rb:155:in `parse'
+  json (1.7.5) lib/json/common.rb:155:in `parse'
+  multi_json (1.3.6) lib/multi_json/adapters/json_common.rb:7:in `load'
+  multi_json (1.3.6) lib/multi_json.rb:93:in `load'
+  activesupport (3.2.8) lib/active_support/json/decoding.rb:15:in `decode'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:47:in `parse_formatted_parameters'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:17:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__434967737__call__4__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (29.2ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.9ms)
+
+
+Started POST "/testchallenges.json" for 127.0.0.1 at Mon Sep 24 11:22:56 +0530 2012
+Error occurred while parsing request parameters.
+Contents:
+
+
+
+MultiJson::DecodeError (399: unexpected token at '="arunganga", "uuid"="121", "score"=1000, "initiator"="arunganga"]'):
+  json (1.7.5) lib/json/common.rb:155:in `parse'
+  json (1.7.5) lib/json/common.rb:155:in `parse'
+  multi_json (1.3.6) lib/multi_json/adapters/json_common.rb:7:in `load'
+  multi_json (1.3.6) lib/multi_json.rb:93:in `load'
+  activesupport (3.2.8) lib/active_support/json/decoding.rb:15:in `decode'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:47:in `parse_formatted_parameters'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:17:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__434967737__call__4__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started POST "/testchallenges.json" for 127.0.0.1 at Mon Sep 24 11:23:12 +0530 2012
+Error occurred while parsing request parameters.
+Contents:
+
+
+
+MultiJson::DecodeError (757: unexpected token at '{"fbid"="arunganga", "uuid"="121", "score"=1000, "initiator"="arunganga"}'):
+  json (1.7.5) lib/json/common.rb:155:in `parse'
+  json (1.7.5) lib/json/common.rb:155:in `parse'
+  multi_json (1.3.6) lib/multi_json/adapters/json_common.rb:7:in `load'
+  multi_json (1.3.6) lib/multi_json.rb:93:in `load'
+  activesupport (3.2.8) lib/active_support/json/decoding.rb:15:in `decode'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:47:in `parse_formatted_parameters'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:17:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__434967737__call__4__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.2ms)
+
+
+Started POST "/testchallenges.json" for 127.0.0.1 at Mon Sep 24 11:23:13 +0530 2012
+Error occurred while parsing request parameters.
+Contents:
+
+
+
+MultiJson::DecodeError (757: unexpected token at '{"fbid"="arunganga", "uuid"="121", "score"=1000, "initiator"="arunganga"}'):
+  json (1.7.5) lib/json/common.rb:155:in `parse'
+  json (1.7.5) lib/json/common.rb:155:in `parse'
+  multi_json (1.3.6) lib/multi_json/adapters/json_common.rb:7:in `load'
+  multi_json (1.3.6) lib/multi_json.rb:93:in `load'
+  activesupport (3.2.8) lib/active_support/json/decoding.rb:15:in `decode'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:47:in `parse_formatted_parameters'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:17:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__434967737__call__4__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.3ms)
+
+
+Started POST "/testchallenges.json" for 127.0.0.1 at Mon Sep 24 11:23:13 +0530 2012
+Error occurred while parsing request parameters.
+Contents:
+
+
+
+MultiJson::DecodeError (757: unexpected token at '{"fbid"="arunganga", "uuid"="121", "score"=1000, "initiator"="arunganga"}'):
+  json (1.7.5) lib/json/common.rb:155:in `parse'
+  json (1.7.5) lib/json/common.rb:155:in `parse'
+  multi_json (1.3.6) lib/multi_json/adapters/json_common.rb:7:in `load'
+  multi_json (1.3.6) lib/multi_json.rb:93:in `load'
+  activesupport (3.2.8) lib/active_support/json/decoding.rb:15:in `decode'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:47:in `parse_formatted_parameters'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:17:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__434967737__call__4__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.8ms)
+
+
+Started POST "/testchallenges.json" for 127.0.0.1 at Mon Sep 24 11:23:13 +0530 2012
+Error occurred while parsing request parameters.
+Contents:
+
+
+
+MultiJson::DecodeError (757: unexpected token at '{"fbid"="arunganga", "uuid"="121", "score"=1000, "initiator"="arunganga"}'):
+  json (1.7.5) lib/json/common.rb:155:in `parse'
+  json (1.7.5) lib/json/common.rb:155:in `parse'
+  multi_json (1.3.6) lib/multi_json/adapters/json_common.rb:7:in `load'
+  multi_json (1.3.6) lib/multi_json.rb:93:in `load'
+  activesupport (3.2.8) lib/active_support/json/decoding.rb:15:in `decode'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:47:in `parse_formatted_parameters'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:17:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__434967737__call__4__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started GET "/testchallenges/new" for 127.0.0.1 at Mon Sep 24 11:38:10 +0530 2012
+Processing by TestchallengesController#new as HTML
+  Rendered testchallenges/_form.html.erb (2.1ms)
+  Rendered testchallenges/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Sep 24 11:38:10 +0530 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Mon Sep 24 11:38:10 +0530 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Sep 24 11:38:10 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testchallenges.css?body=1" for 127.0.0.1 at Mon Sep 24 11:38:10 +0530 2012
+Served asset /testchallenges.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uniqueids.css?body=1" for 127.0.0.1 at Mon Sep 24 11:38:10 +0530 2012
+Served asset /uniqueids.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Sep 24 11:38:10 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Sep 24 11:38:10 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Sep 24 11:38:10 +0530 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testchallenges.js?body=1" for 127.0.0.1 at Mon Sep 24 11:38:10 +0530 2012
+Served asset /testchallenges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uniqueids.js?body=1" for 127.0.0.1 at Mon Sep 24 11:38:10 +0530 2012
+Served asset /uniqueids.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Sep 24 11:38:10 +0530 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/testchallenges" for 127.0.0.1 at Mon Sep 24 11:39:35 +0530 2012
+Processing by TestchallengesController#create as HTML
+  Parameters: {"testchallenge"=>{"initiator"=>"arun.ganga", "score"=>"1000", "fbid"=>"arun.ganga", "uuid"=>"111"}, "utf8"=>"✓", "commit"=>"Create Testchallenge", "authenticity_token"=>"GienhULjfc9OuXUD2Yeu6DQsouA5Fmi6p85sNTtdvgo="}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `testchallenges` (`created_at`, `fbid`, `initiator`, `score`, `updated_at`, `uuid`) VALUES ('2012-09-24 06:09:35', 'arun.ganga', 'arun.ganga', 1000, '2012-09-24 06:09:35', '111')[0m
+  [1m[35m (2.7ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/testchallenges/1
+Completed 302 Found in 25ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/testchallenges/1" for 127.0.0.1 at Mon Sep 24 11:39:35 +0530 2012
+Processing by TestchallengesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTestchallenge Load (0.4ms)[0m  [1mSELECT `testchallenges`.* FROM `testchallenges` WHERE `testchallenges`.`id` = 1 LIMIT 1[0m
+  Rendered testchallenges/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Sep 24 11:39:35 +0530 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Mon Sep 24 11:39:35 +0530 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Sep 24 11:39:35 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testchallenges.css?body=1" for 127.0.0.1 at Mon Sep 24 11:39:35 +0530 2012
+Served asset /testchallenges.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uniqueids.css?body=1" for 127.0.0.1 at Mon Sep 24 11:39:35 +0530 2012
+Served asset /uniqueids.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Sep 24 11:39:35 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Sep 24 11:39:35 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Sep 24 11:39:35 +0530 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testchallenges.js?body=1" for 127.0.0.1 at Mon Sep 24 11:39:35 +0530 2012
+Served asset /testchallenges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uniqueids.js?body=1" for 127.0.0.1 at Mon Sep 24 11:39:35 +0530 2012
+Served asset /uniqueids.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Sep 24 11:39:35 +0530 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/testchallenges.json" for 127.0.0.1 at Mon Sep 24 11:39:49 +0530 2012
+Processing by TestchallengesController#index as JSON
+  Parameters: {"testchallenge"=>{}}
+  [1m[35mTestchallenge Load (0.4ms)[0m  SELECT `testchallenges`.* FROM `testchallenges` 
+Completed 200 OK in 33ms (Views: 32.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/uniqueids/" for 127.0.0.1 at Mon Sep 24 11:40:21 +0530 2012
+Processing by UniqueidsController#index as HTML
+  [1m[36mUniqueid Load (0.2ms)[0m  [1mSELECT `uniqueids`.* FROM `uniqueids` [0m
+  Rendered uniqueids/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Sep 24 11:40:21 +0530 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Mon Sep 24 11:40:21 +0530 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Sep 24 11:40:21 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testchallenges.css?body=1" for 127.0.0.1 at Mon Sep 24 11:40:21 +0530 2012
+Served asset /testchallenges.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uniqueids.css?body=1" for 127.0.0.1 at Mon Sep 24 11:40:21 +0530 2012
+Served asset /uniqueids.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Sep 24 11:40:21 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Sep 24 11:40:21 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Sep 24 11:40:21 +0530 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testchallenges.js?body=1" for 127.0.0.1 at Mon Sep 24 11:40:21 +0530 2012
+Served asset /testchallenges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uniqueids.js?body=1" for 127.0.0.1 at Mon Sep 24 11:40:21 +0530 2012
+Served asset /uniqueids.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Sep 24 11:40:21 +0530 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/uniqueids/new" for 127.0.0.1 at Mon Sep 24 11:40:24 +0530 2012
+Processing by UniqueidsController#new as HTML
+  Rendered uniqueids/_form.html.erb (2.4ms)
+  Rendered uniqueids/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Mon Sep 24 11:40:24 +0530 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Sep 24 11:40:24 +0530 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uniqueids.css?body=1" for 127.0.0.1 at Mon Sep 24 11:40:24 +0530 2012
+Served asset /uniqueids.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testchallenges.css?body=1" for 127.0.0.1 at Mon Sep 24 11:40:24 +0530 2012
+Served asset /testchallenges.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Sep 24 11:40:24 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Sep 24 11:40:24 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Sep 24 11:40:24 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Sep 24 11:40:24 +0530 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testchallenges.js?body=1" for 127.0.0.1 at Mon Sep 24 11:40:24 +0530 2012
+Served asset /testchallenges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uniqueids.js?body=1" for 127.0.0.1 at Mon Sep 24 11:40:24 +0530 2012
+Served asset /uniqueids.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Sep 24 11:40:24 +0530 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/uniqueids" for 127.0.0.1 at Mon Sep 24 11:40:31 +0530 2012
+Processing by UniqueidsController#create as HTML
+  Parameters: {"utf8"=>"✓", "uniqueid"=>{"uuid"=>"111"}, "commit"=>"Create Uniqueid", "authenticity_token"=>"GienhULjfc9OuXUD2Yeu6DQsouA5Fmi6p85sNTtdvgo="}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `uniqueids` (`created_at`, `updated_at`, `uuid`) VALUES ('2012-09-24 06:10:31', '2012-09-24 06:10:31', 111)[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/uniqueids/1
+Completed 302 Found in 6ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/uniqueids/1" for 127.0.0.1 at Mon Sep 24 11:40:31 +0530 2012
+Processing by UniqueidsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUniqueid Load (0.4ms)[0m  [1mSELECT `uniqueids`.* FROM `uniqueids` WHERE `uniqueids`.`id` = 1 LIMIT 1[0m
+  Rendered uniqueids/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Mon Sep 24 11:40:31 +0530 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Sep 24 11:40:31 +0530 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Sep 24 11:40:31 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testchallenges.css?body=1" for 127.0.0.1 at Mon Sep 24 11:40:31 +0530 2012
+Served asset /testchallenges.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uniqueids.css?body=1" for 127.0.0.1 at Mon Sep 24 11:40:31 +0530 2012
+Served asset /uniqueids.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Sep 24 11:40:31 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Sep 24 11:40:31 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Sep 24 11:40:31 +0530 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testchallenges.js?body=1" for 127.0.0.1 at Mon Sep 24 11:40:31 +0530 2012
+Served asset /testchallenges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uniqueids.js?body=1" for 127.0.0.1 at Mon Sep 24 11:40:31 +0530 2012
+Served asset /uniqueids.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Sep 24 11:40:31 +0530 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/testchallenges.json" for 127.0.0.1 at Mon Sep 24 13:24:52 +0530 2012
+Error occurred while parsing request parameters.
+Contents:
+
+
+
+MultiJson::DecodeError (399: unexpected token at '{"fbid"="arunganga", "uuid"="121", "score"=1000, "initiator"="arunganga"}]'):
+  json (1.7.5) lib/json/common.rb:155:in `parse'
+  json (1.7.5) lib/json/common.rb:155:in `parse'
+  multi_json (1.3.6) lib/multi_json/adapters/json_common.rb:7:in `load'
+  multi_json (1.3.6) lib/multi_json.rb:93:in `load'
+  activesupport (3.2.8) lib/active_support/json/decoding.rb:15:in `decode'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:47:in `parse_formatted_parameters'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:17:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__434967737__call__4__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.1ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.4ms)[0m  DROP DATABASE IF EXISTS `assign2_test`
+  [1m[36m (0.2ms)[0m  [1mCREATE DATABASE `assign2_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (2.7ms)[0m  CREATE TABLE `testchallenges` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `fbid` varchar(255), `uuid` varchar(255), `score` int(11), `initiator` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (9.9ms)[0m  [1mCREATE TABLE `uniqueids` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `uuid` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (26.3ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (15.2ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [1m[35m (0.9ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (21.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20120924045529')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20120924045339')
+Connecting to database specified by database.yml
+  [1m[36m (2.5ms)[0m  [1mDROP DATABASE IF EXISTS `assign2_test`[0m
+  [1m[35m (0.2ms)[0m  CREATE DATABASE `assign2_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
+  [1m[36m (8.9ms)[0m  [1mCREATE TABLE `testchallenges` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `fbid` varchar(255), `uuid` varchar(255), `score` int(11), `initiator` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (19.7ms)[0m  CREATE TABLE `uniqueids` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `uuid` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (21.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (18.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20120924045529')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20120924045339')[0m
+
+
+Started GET "/" for 127.0.0.1 at Tue Sep 25 09:54:52 +0530 2012
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 136ms (Views: 135.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Tue Sep 25 09:54:52 +0530 2012
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Tue Sep 25 09:54:52 +0530 2012
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Tue Sep 25 09:54:52 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/testchallenges.css?body=1" for 127.0.0.1 at Tue Sep 25 09:54:52 +0530 2012
+Served asset /testchallenges.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/uniqueids.css?body=1" for 127.0.0.1 at Tue Sep 25 09:54:52 +0530 2012
+Served asset /uniqueids.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Sep 25 09:54:52 +0530 2012
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Sep 25 09:54:52 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Tue Sep 25 09:54:52 +0530 2012
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/testchallenges.js?body=1" for 127.0.0.1 at Tue Sep 25 09:54:52 +0530 2012
+Served asset /testchallenges.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/uniqueids.js?body=1" for 127.0.0.1 at Tue Sep 25 09:54:53 +0530 2012
+Served asset /uniqueids.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Sep 25 09:54:53 +0530 2012
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/testchallenges" for 127.0.0.1 at Tue Sep 25 09:54:54 +0530 2012
+Processing by TestchallengesController#index as HTML
+  [1m[36mTestchallenge Load (0.3ms)[0m  [1mSELECT `testchallenges`.* FROM `testchallenges` [0m
+  Rendered testchallenges/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 76ms (Views: 35.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Tue Sep 25 09:54:54 +0530 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Tue Sep 25 09:54:54 +0530 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testchallenges.css?body=1" for 127.0.0.1 at Tue Sep 25 09:54:54 +0530 2012
+Served asset /testchallenges.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Tue Sep 25 09:54:54 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Sep 25 09:54:55 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uniqueids.css?body=1" for 127.0.0.1 at Tue Sep 25 09:54:55 +0530 2012
+Served asset /uniqueids.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Sep 25 09:54:55 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Tue Sep 25 09:54:55 +0530 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testchallenges.js?body=1" for 127.0.0.1 at Tue Sep 25 09:54:55 +0530 2012
+Served asset /testchallenges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uniqueids.js?body=1" for 127.0.0.1 at Tue Sep 25 09:54:55 +0530 2012
+Served asset /uniqueids.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Sep 25 09:54:55 +0530 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Sep 26 11:16:21 +0530 2012
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 129ms (Views: 128.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Wed Sep 26 11:16:21 +0530 2012
+Served asset /application.css - 200 OK (6ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Wed Sep 26 11:16:21 +0530 2012
+Served asset /home.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Wed Sep 26 11:16:21 +0530 2012
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/testchallenges.css?body=1" for 127.0.0.1 at Wed Sep 26 11:16:21 +0530 2012
+Served asset /testchallenges.css - 200 OK (1ms)
+
+
+Started GET "/assets/uniqueids.css?body=1" for 127.0.0.1 at Wed Sep 26 11:16:21 +0530 2012
+Served asset /uniqueids.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Wed Sep 26 11:16:21 +0530 2012
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Wed Sep 26 11:16:21 +0530 2012
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Wed Sep 26 11:16:21 +0530 2012
+Served asset /home.js - 200 OK (2ms)
+
+
+Started GET "/assets/testchallenges.js?body=1" for 127.0.0.1 at Wed Sep 26 11:16:21 +0530 2012
+Served asset /testchallenges.js - 200 OK (2ms)
+
+
+Started GET "/assets/uniqueids.js?body=1" for 127.0.0.1 at Wed Sep 26 11:16:21 +0530 2012
+Served asset /uniqueids.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Wed Sep 26 11:16:21 +0530 2012
+Served asset /application.js - 200 OK (6ms)
+
+
+Started GET "/testchallenges" for 127.0.0.1 at Wed Sep 26 11:16:26 +0530 2012
+Processing by TestchallengesController#index as HTML
+  [1m[36mTestchallenge Load (0.3ms)[0m  [1mSELECT `testchallenges`.* FROM `testchallenges` [0m
+  Rendered testchallenges/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 150ms (Views: 31.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Wed Sep 26 11:16:26 +0530 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Wed Sep 26 11:16:26 +0530 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Wed Sep 26 11:16:26 +0530 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testchallenges.css?body=1" for 127.0.0.1 at Wed Sep 26 11:16:26 +0530 2012
+Served asset /testchallenges.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uniqueids.css?body=1" for 127.0.0.1 at Wed Sep 26 11:16:26 +0530 2012
+Served asset /uniqueids.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Wed Sep 26 11:16:26 +0530 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Wed Sep 26 11:16:26 +0530 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Wed Sep 26 11:16:26 +0530 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testchallenges.js?body=1" for 127.0.0.1 at Wed Sep 26 11:16:26 +0530 2012
+Served asset /testchallenges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uniqueids.js?body=1" for 127.0.0.1 at Wed Sep 26 11:16:26 +0530 2012
+Served asset /uniqueids.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Wed Sep 26 11:16:26 +0530 2012
+Served asset /application.js - 304 Not Modified (0ms)

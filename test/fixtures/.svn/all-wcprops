@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/don/!svn/ver/1101/source/assign/test/fixtures
+END
+testchallenges.yml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/don/!svn/ver/1101/source/assign/test/fixtures/testchallenges.yml
+END
+.gitkeep
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/don/!svn/ver/1101/source/assign/test/fixtures/.gitkeep
+END
+uniqueids.yml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/don/!svn/ver/1101/source/assign/test/fixtures/uniqueids.yml
+END

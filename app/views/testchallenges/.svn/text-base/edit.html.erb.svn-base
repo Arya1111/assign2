@@ -1,0 +1,6 @@
+<h1>Editing testchallenge</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @testchallenge %> |
+<%= link_to 'Back', testchallenges_path %>

@@ -1,0 +1,29 @@
+<h1>Listing testchallenges</h1>
+
+<table>
+  <tr>
+    <th>Fbid</th>
+    <th>Uuid</th>
+    <th>Score</th>
+    <th>Initiator</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @testchallenges.each do |testchallenge| %>
+  <tr>
+    <td><%= testchallenge.fbid %></td>
+    <td><%= testchallenge.uuid %></td>
+    <td><%= testchallenge.score %></td>
+    <td><%= testchallenge.initiator %></td>
+    <td><%= link_to 'Show', testchallenge %></td>
+    <td><%= link_to 'Edit', edit_testchallenge_path(testchallenge) %></td>
+    <td><%= link_to 'Destroy', testchallenge, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Testchallenge', new_testchallenge_path %>

@@ -1,0 +1,23 @@
+<h1>Listing uniqueids</h1>
+
+<table>
+  <tr>
+    <th>Uuid</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @uniqueids.each do |uniqueid| %>
+  <tr>
+    <td><%= uniqueid.uuid %></td>
+    <td><%= link_to 'Show', uniqueid %></td>
+    <td><%= link_to 'Edit', edit_uniqueid_path(uniqueid) %></td>
+    <td><%= link_to 'Destroy', uniqueid, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Uniqueid', new_uniqueid_path %>

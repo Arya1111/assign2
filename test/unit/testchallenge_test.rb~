@@ -1,0 +1,15 @@
+require 'test_helper'
+
+class TestchallengeTest < ActiveSupport::TestCase
+  
+def test_the_truth
+    assert false
+
+end
+
+test "should not save post without title" do
+  testchallenge = Testchallenge.new
+  assert !testchallenge.save, "Saved the post without a title"
+end
+
+end

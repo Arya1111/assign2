@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/don/!svn/ver/1101/source/assign/db/migrate
+END
+20120924045339_create_uniqueids.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/don/!svn/ver/1101/source/assign/db/migrate/20120924045339_create_uniqueids.rb
+END
+20120924045529_create_testchallenges.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/don/!svn/ver/1101/source/assign/db/migrate/20120924045529_create_testchallenges.rb
+END

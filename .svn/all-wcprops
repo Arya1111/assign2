@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/don/!svn/ver/1101/source/assign
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/don/!svn/ver/1101/source/assign/Rakefile
+END
+README.rdoc
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/don/!svn/ver/1101/source/assign/README.rdoc
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/don/!svn/ver/1101/source/assign/.gitignore
+END
+Gemfile
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/don/!svn/ver/1101/source/assign/Gemfile
+END
+config.ru
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/don/!svn/ver/1101/source/assign/config.ru
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/don/!svn/ver/1101/source/assign/README.md
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/don/!svn/ver/1101/source/assign/README
+END
+Gemfile.lock
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/don/!svn/ver/1101/source/assign/Gemfile.lock
+END
